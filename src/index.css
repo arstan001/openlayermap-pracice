@@ -18,3 +18,113 @@ html, body, #root, #main {
   flex-basis: 0;
   flex-grow: 999;
 }
+/* sidebar */
+.iconbar {
+  position: absolute;
+  width: 50px;
+  height: 954px;
+  margin: 0 1px 0 0;
+  padding: 7px 8px 796px;
+  text-align: center;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+.active {
+  width: 24px;
+  height: 24px;
+  margin: 0 0 16px;
+  padding: 13px 13px 12px 12px;
+  border-radius: 5px;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  background-color: #1f4782;
+}
+.non-active {
+  width: 24px;
+  height: 24px;
+  margin: 0 0 16px;
+  padding: 13px 13px 12px 12px;
+  border-radius: 5px;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  background-color:transparent;
+}
+.Overlay-Gray {
+  width: 21px;
+  height: 27px;
+  object-fit: contain;
+}
+.Combined-Shape {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+.Map-Hovered {
+  width: 17px;
+  height: 17px;
+  object-fit: contain;
+}
+/*sidemenu */
+.iconmenu{
+  position: absolute;
+  left: 66px;
+  width: 305px;
+  height: 100%;
+  color: #505050;
+  font-family: NotoSansKR;
+}
+.location{
+  height: 138px;
+  margin: 0 0 0 1px;
+  padding: 11px 23px 0;
+  border-bottom: 1px solid  #d3d3d3;
+}
+.Marker-Annotation-Colored {
+  width: 17px;
+  height: 19px;
+  object-fit: contain;
+}
+.detailinput{
+  width: 147px;
+  height: 33px;
+  margin: 24px 98px 3px 5px;
+  padding: 4px 8px 4px 9px;
+  border-radius: 5px;
+  border: solid 0.5px #b1b1b1;
+}
+th{
+  padding-bottom: 16px;
+  text-align: left;
+  font-family: NotoSansKR;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #505050;
+}
+tr td{
+  padding-top: 10px;
+  font-family: NotoSansKR;
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #505050;
+}
+tr td:nth-of-type(2n){
+  font-family: Roboto;
+  font-size: 18px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.39;
+  letter-spacing: normal;
+  color: #2b4877;
+}
+hr{
+  margin-top: 14px;
+  opacity: 30%;
+}
