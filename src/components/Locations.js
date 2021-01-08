@@ -18,6 +18,7 @@ const Locations = (props) => {
                          </td>
                         <td>
                             <span className="detailinput">{props.item[1]}</span>
+                        </td>
                     </tr>
                     <tr>
                         <td>
