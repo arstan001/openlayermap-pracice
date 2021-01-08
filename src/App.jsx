@@ -3,8 +3,7 @@ import React, { useLayoutEffect, Component } from 'react'
 import Sidebar from './components/Sidebar'
 import MapSection from './components/MapSection'
 
-
-
+import './index.css'
 
 class App extends React.Component {
   constructor(){
@@ -25,12 +24,10 @@ class App extends React.Component {
     })
   }
   render(){
-    
     return (
     <main id='main'>
-      <Sidebar locations={this.state.reqdata} isLoading={this.state.isLoading}/>
-      
-      <MapSection/>
+      <Sidebar location={this.state.reqdata} isLoading={this.state.isLoading}/>
+      <MapSection location={this.state.reqdata} isLoading={this.state.isLoading}/>
     </main>
   )}
 
