@@ -21,7 +21,9 @@ class Sidebar extends React.Component{
         const locations = this.props.isLoading ? null : this.props.location.map((item, index) => <Locations item={item} index={index} key={index}/>)
         
         return (
+            
             <aside id='sidebar'>
+                <link rel="preload" href="./public/img/combined-shaped.png" as="image"/>
                 <div className="iconbar">
                     <button className={this.state.clicked==="locations" ? "active" : "nonactive"} onClick={(e) => this.handleChange("locations")}>
                     {this.state.clicked==="locations" ? <img src="./public/img/combined-shape.png" srcSet="./public/img/combined-shape@2x.png 2x,
