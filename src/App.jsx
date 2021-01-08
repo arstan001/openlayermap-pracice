@@ -27,7 +27,7 @@ class App extends React.Component {
     return (
     <main id='main'>
       <Sidebar location={this.state.reqdata} isLoading={this.state.isLoading}/>
-      <MapSection location={this.state.reqdata} isLoading={this.state.isLoading}/>
+      <MapSection location={this.state.reqdata} key={this.state.isLoading} isLoading={this.state.isLoading}/>
     </main>
   )}
 
