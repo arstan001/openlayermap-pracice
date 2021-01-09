@@ -6,30 +6,31 @@ import MapSection from './components/MapSection'
 import './index.css'
 
 class App extends React.Component {
-  constructor(){
+  constructor() {
     super()
-    this.state={
+    this.state = {
       isLoading: true,
-      reqdata:[]
+      reqdata: []
     }
   }
-  componentDidMount(){
+  componentDidMount() {
     fetch("https://angelswing-frontend-test-serverless-api.vercel.app/api/locations")
-    .then(response => response.json())
-    .then(data => {
-      this.setState({
-        isLoading: false,
-        reqdata:data.locations
+      .then(response => response.json())
+      .then(data => {
+        this.setState({
+          isLoading: false,
+          reqdata: data.locations
+        })
       })
-    })
   }
-  render(){
+  render() {
     return (
-    <main id='main'>
-      <Sidebar location={this.state.reqdata} isLoading={this.state.isLoading}/>
-      <MapSection location={this.state.reqdata} key={this.state.isLoading} isLoading={this.state.isLoading}/>
-    </main>
-  )}
+      <main id='main'>
+        <Sidebar location={this.state.reqdata} isLoading={this.state.isLoading} />
+        <MapSection location={this.state.reqdata} key={this.state.isLoading} isLoading={this.state.isLoading} />
+      </main>
+    )
+  }
 
 }
 
